@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>akveo-test</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_content">
+        <a href="#" class="logo" title="logo geotrack">
+          <span class="logo_icon">
+            <svg height="30px" width="30px">
+              <use xlink:href="#location"></use>
+            </svg>
+          </span>
+          <span class="logo_text">
+            <span class="logo_name">geotrack</span>
+            <span class="logo_version">ver 1.0</span>
+          </span>
+        </a>
+
+        <nav class="main-nav closed" aria-label="Main navigation">
+          <button type="button" class="open-close-menu" id="menu-opener" aria-expanded="false">menu</button>
+          <ul class="main-nav_list" aria-labelledby="menu-opener" aria-hidden="true" role="menu">
+            <li class="main-nav_item">
+              <a href="#" class="main-nav_link active">geomap</a>
+            </li>
+            <li class="main-nav_item">
+              <a href="#" class="main-nav_link">home</a>
+            </li>
+            <li class="main-nav_item">
+              <a href="#" class="main-nav_link">about</a>
+            </li>
+            <li class="main-nav_item">
+              <a href="#" class="main-nav_link">features</a>
+            </li>
+            <li class="main-nav_item">
+              <a href="#" class="main-nav_link">pricing</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="search" aria-label="Search geotrack">
+          <label for="search-field" class="visually-hidden">Search field</label>
+          <input class="search_text" type="text" id="search-field" placeholder="Search geotrack">
+          <button type="submit" class="search_submit" title="search button">
+            <svg>
+              <use xlink:href="#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="user">
+          <img class="user_photo" src="images/user.png" alt="user photo">
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">Page title</h1>
+      <div class="main_content">
+        <div class="content">
+          <section class="description">
+            <div class="description_icon">
+              <svg aria-hidden="true">
+                <use xlink:href="#message"></use>
+              </svg>
+            </div>
+            <div class="description_content">
+              <h2 class="description_title">Geo Message</h2>
+              <p class="description_text">The results of yesterday's election
+                came as a surprise to most of us, regardless of our political
+                views. It will take time for us to process and understand
+                the meaning of the vote</p>
+            </div>
+          </section>
+          <section id="map">
+            <h2 class="visually-hidden">Some map</h2>
+          </section>
+        </div>
+
+        <aside class="aside">
+          <div class="geo-item">
+            <div class="geo-item_heading">
+              <div class="geo-item_row">
+                <img src="images/geo-item.png" alt="geo item" class="geo-item_logo">
+                <div class="geo-item_qr">
+                  <img src="images/geo-item-qr.png" alt="geo item qr">
+                </div>
+                <div class="geo-item_opener"></div>
+              </div>
+              <div class="geo-item_name">California University</div>
+              <div class="geo-item_id">ID: 1238923748903478914751089</div>
+              <button class="geo-item_copy">Copy in buffer</button>
+            </div>
+            <div class="geo-item_info">
+              <dl>
+                <dt>Geo Type</dt>
+                <dd>Goverment</dd>
+                <dt>Short Geo</dt>
+                <dd>CA_University</dd>
+                <dt>Adress</dt>
+                <dd>United States, California LA, Sarigza Avenue 234, 44A</dd>
+                <dt>Email</dt>
+                <dd><a href="mailto:ca@university@gmail.com">ca@university@gmail.com</a></dd>
+                <dt>Expiere</dt>
+                <dd>31 Oct 2016</dd>
+                <dt>Privacy</dt>
+                <dd>Enable</dd>
+              </dl>
+            </div>
+            <div class="geo-item_footer">
+              <button class="geo-item_edit">Edit Profile</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="footer_info">
+          <div class="company-name">geotrack</div>
+          <div class="copyrights">&#169; Geotrack Inc. All right reserved 2016</div>
+        </div>
+        <nav aria-label="Footer  navigation">
+          <ul class="footer-nav">
+            <li class="footer-nav_item"><a href="#" class="footer-nav_link">app api</a></li>
+            <li class="footer-nav_item"><a href="#" class="footer-nav_link">support</a></li>
+          </ul>
+        </nav>
+        <ul class="social-networks">
+          <li class="social-networks_item">
+            <a href="#" class="social-networks_link" title="facebook">
+              <svg height="15px" width="15px" aria-hidden="true">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks_item">
+            <a href="#" class="social-networks_link" title="twitter">
+              <svg height="15px" width="15px" aria-hidden="true">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks_item">
+            <a href="#" class="social-networks_link" title="instagram">
+              <svg height="15px" width="15px" aria-hidden="true">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks_item">
+            <a href="#" class="social-networks_link" title="vimeo">
+              <svg height="15px" width="15px" aria-hidden="true">
+                <use xlink:href="#vimeo"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="search" viewBox="0 0 768 768">
+        <path fill="#909bb1" d="M304.5 448.5c79.5 0 144-64.5 144-144s-64.5-144-144-144-144 64.5-144 144 64.5 144 144 144zM496.5 448.5l159 159-48 48-159-159v-25.5l-9-9c-36 31.5-84 49.5-135 49.5-115.5 0-208.5-91.5-208.5-207s93-208.5 208.5-208.5 207 93 207 208.5c0 51-18 99-49.5 135l9 9h25.5z"></path>
+      </symbol>
+      <symbol id="location" viewBox="0 0 512 512">
+        <path d="M256 0c-88.366 0-160 71.634-160 160 0 160 160 352 160 352s160-192 160-352c0-88.366-71.635-160-160-160zM256 256c-53.020 0-96-42.98-96-96s42.98-96 96-96 96 42.98 96 96-42.98 96-96 96z"></path>
+      </symbol>
+      <symbol id="message" viewBox="0 0 768 768">
+        <path d="M576 256.5v-64.5h-384v64.5h384zM448.5 448.5v-64.5h-256.5v64.5h256.5zM192 288v64.5h384v-64.5h-384zM640.5 64.5c34.5 0 63 28.5 63 63v384c0 34.5-28.5 64.5-63 64.5h-448.5l-127.5 127.5v-576c0-34.5 28.5-63 63-63h513z"></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 512 512">
+        <path d="M464 0h-416c-26.4 0-48 21.6-48 48v416c0 26.4 21.6 48 48 48h208v-224h-64v-64h64v-32c0-52.9 43.1-96 96-96h64v64h-64c-17.6 0-32 14.4-32 32v32h96l-16 64h-80v224h144c26.4 0 48-21.6 48-48v-416c0-26.4-21.6-48-48-48z"></path>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 512 512">
+        <path d="M512 113.2c-18.8 8.4-39.1 14-60.3 16.5 21.7-13 38.3-33.6 46.2-58.1-20.3 12-42.8 20.8-66.7 25.5-19.2-20.4-46.5-33.1-76.7-33.1-58 0-105 47-105 105 0 8.2 0.9 16.2 2.7 23.9-87.3-4.4-164.7-46.2-216.5-109.8-9 15.5-14.2 33.6-14.2 52.8 0 36.4 18.5 68.6 46.7 87.4-17.2-0.5-33.4-5.3-47.6-13.1 0 0.4 0 0.9 0 1.3 0 50.9 36.2 93.4 84.3 103-8.8 2.4-18.1 3.7-27.7 3.7-6.8 0-13.3-0.7-19.8-1.9 13.4 41.7 52.2 72.1 98.1 73-36 28.2-81.2 45-130.5 45-8.5 0-16.8-0.5-25.1-1.5 46.6 29.9 101.8 47.2 161.1 47.2 193.2 0 298.9-160.1 298.9-298.9 0-4.6-0.1-9.1-0.3-13.6 20.5-14.7 38.3-33.2 52.4-54.3z"></path>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 512 512">
+        <path d="M256 46.1c68.4 0 76.5 0.3 103.4 1.5 25 1.1 38.5 5.3 47.5 8.8 11.9 4.6 20.5 10.2 29.4 19.1 9 9 14.5 17.5 19.2 29.4 3.5 9 7.7 22.6 8.8 47.5 1.2 27 1.5 35.1 1.5 103.4s-0.3 76.5-1.5 103.4c-1.1 25-5.3 38.5-8.8 47.5-4.6 11.9-10.2 20.5-19.1 29.4-9 9-17.5 14.5-29.4 19.2-9 3.5-22.6 7.7-47.5 8.8-27 1.2-35.1 1.5-103.4 1.5s-76.5-0.3-103.4-1.5c-25-1.1-38.5-5.3-47.5-8.8-11.9-4.6-20.5-10.2-29.4-19.1-9-9-14.5-17.5-19.2-29.4-3.5-9-7.7-22.6-8.8-47.5-1.2-27-1.5-35.1-1.5-103.4s0.3-76.5 1.5-103.4c1.1-25 5.3-38.5 8.8-47.5 4.6-11.9 10.2-20.5 19.1-29.4 9-9 17.5-14.5 29.4-19.2 9-3.5 22.6-7.7 47.5-8.8 26.9-1.2 35-1.5 103.4-1.5zM256 0c-69.5 0-78.2 0.3-105.5 1.5-27.2 1.2-45.9 5.6-62.1 11.9-16.9 6.6-31.2 15.3-45.4 29.6-14.3 14.2-23 28.5-29.6 45.3-6.3 16.3-10.7 34.9-11.9 62.1-1.2 27.4-1.5 36.1-1.5 105.6s0.3 78.2 1.5 105.5c1.2 27.2 5.6 45.9 11.9 62.1 6.6 16.9 15.3 31.2 29.6 45.4 14.2 14.2 28.5 23 45.3 29.5 16.3 6.3 34.9 10.7 62.1 11.9 27.3 1.2 36 1.5 105.5 1.5s78.2-0.3 105.5-1.5c27.2-1.2 45.9-5.6 62.1-11.9 16.8-6.5 31.1-15.3 45.3-29.5s23-28.5 29.5-45.3c6.3-16.3 10.7-34.9 11.9-62.1 1.2-27.3 1.5-36 1.5-105.5s-0.3-78.2-1.5-105.5c-1.2-27.2-5.6-45.9-11.9-62.1-6.3-17-15-31.3-29.3-45.5-14.2-14.2-28.5-23-45.3-29.5-16.3-6.3-34.9-10.7-62.1-11.9-27.4-1.3-36.1-1.6-105.6-1.6v0z"></path>
+        <path d="M256 124.5c-72.6 0-131.5 58.9-131.5 131.5s58.9 131.5 131.5 131.5 131.5-58.9 131.5-131.5c0-72.6-58.9-131.5-131.5-131.5zM256 341.3c-47.1 0-85.3-38.2-85.3-85.3s38.2-85.3 85.3-85.3c47.1 0 85.3 38.2 85.3 85.3s-38.2 85.3-85.3 85.3z"></path>
+        <path d="M423.4 119.3c0 16.955-13.745 30.7-30.7 30.7s-30.7-13.745-30.7-30.7c0-16.955 13.745-30.7 30.7-30.7s30.7 13.745 30.7 30.7z"></path>
+      </symbol>
+      <symbol id="vimeo" viewBox="0 0 512 512">
+        <path d="M511.8 137c-2.3 49.8-37.1 118.1-104.4 204.7-69.6 90.4-128.5 135.7-176.7 135.7-29.8 0-55.1-27.5-75.7-82.6-13.8-50.5-27.5-101-41.3-151.5-15.3-55.1-31.7-82.6-49.3-82.6-3.8 0-17.2 8.1-40.2 24.1l-24.1-31c25.3-22.2 50.2-44.4 74.7-66.6 33.7-29.1 59-44.4 75.9-46 39.8-3.8 64.4 23.4 73.6 81.7 9.9 62.9 16.8 102 20.7 117.3 11.5 52.2 24.1 78.3 37.9 78.3 10.7 0 26.8-16.9 48.3-50.8 21.4-33.8 32.9-59.6 34.5-77.3 3.1-29.2-8.4-43.9-34.5-43.9-12.3 0-24.9 2.8-37.9 8.4 25.2-82.4 73.2-122.4 144.2-120.1 52.5 1.4 77.3 35.5 74.3 102.2z"></path>
+      </symbol>
+    </svg>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>
+      var btn = document.querySelector('.open-close-menu');
+      var menuHolder = btn.parentNode;
+      var menu = menuHolder.querySelector('.main-nav_list');;
+
+      btn.onclick = () => {
+        if ( menuHolder.classList.contains('closed') ) {
+          menuHolder.classList.remove('closed');
+          menuHolder.classList.add('opened');
+          btn.setAttribute('aria-expanded', true);
+          menu.setAttribute('aria-hidden', false);
+        } else {
+          menuHolder.classList.remove('opened');
+          menuHolder.classList.add('closed');
+          btn.setAttribute('aria-expanded', false);
+          menu.setAttribute('aria-hidden', true);
+        }
+      };
+      var myMap;
+      ymaps.ready(init);
+
+      function init () {
+          myMap = new ymaps.Map('map', {
+              center: [32.697416, -117.190390],
+              zoom: 13,
+              controls: []
+          }, {
+              searchControlProvider: 'yandex#search'
+          });
+      }
+    </script>
+  </body>
+</html>
